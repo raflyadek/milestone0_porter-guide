@@ -1,0 +1,129 @@
+html {
+    font-size: 100%;
+}
+
+/* global style */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+    grid-template-rows: auto 1fr auto;
+}
+/* header */
+header {
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand {
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 2rem;
+}
+
+nav ul {
+    display: flex;
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+/* main */
+main {
+    grid-area: main;
+}
+.hero-img {
+    /* Position and center the image to scale nicely on all screens */
+    background-image: url(img/hero-img.jpg);
+    background-position: center; /* position the image center */
+    background-repeat: no-repeat;
+    background-size: cover; /* keep size cover */
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 59px);
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    font-size: 3rem;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+}
+
+.main-content {
+    margin: 0 20%;
+}
+
+.content-text {
+    text-align: center;
+}
+
+.content-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem ;
+}
+
+.content-text p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.gallery-img-container {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.gallery-img-container img{
+    border-radius: 3%;
+    width: 100%;
+    height: 600px;
+    flex: 1;
+    margin: 10px;
+}
+
+
+.contact-us-img {
+    /* centering the image */
+    display: flex;
+    justify-content: center;
+}
+.contact-us-img img {
+    margin: 5% 0;
+    border-radius: 5%;
+    width: 100%;
+    min-height: 400px;
+    height: 600px;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #ffffff;
+}
