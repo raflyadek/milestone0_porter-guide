@@ -1,4 +1,4 @@
-//set variable to store carouselIndex outside function
+//set variable to store carouselIndex to keep track the index outside function
 var carouselIndex = 0;
 //starts the function when web page loads
 carousel();
