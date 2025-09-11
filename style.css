@@ -20,7 +20,7 @@ body {
 /* header */
 header {
     grid-area: header;
-    background-color: black;
+    background-color: #121212;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,7 @@ main {
     background-size: cover; /* keep size cover */
     position: relative;
     width: 100%;
-    height: calc(100vh - 59px);
+    height: calc(100vh - 59px); /* calculate the height 100 view port height - 59px */
 }
 .hero-text {
     text-align: center;
@@ -72,8 +72,9 @@ main {
     left: 50%;
 }
 
+/* main section */
 .main-content {
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 .content-text {
@@ -90,21 +91,65 @@ main {
     margin: 0;
 }
 
-.gallery-img-container {
-    max-width: 500px;
+/* container for content image */
+.img-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    max-width: 1100px;
+    justify-content: center;
+    margin: 0 10%;
 }
 
-.gallery-img-container img{
-    border-radius: 3%;
+.img-container img {
+    flex: 1;
+    border-radius: 2%;
     width: 100%;
     height: 600px;
-    flex: 1;
     margin: 10px;
 }
+/* carousel */
+.carousel-container{
+    position: relative;
+}
 
+.carousel-slide {
+    display: none;
+    position: relative;
+}
+
+.text-carousel {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
 
 .contact-us-img {
     /* centering the image */
@@ -112,8 +157,8 @@ main {
     justify-content: center;
 }
 .contact-us-img img {
-    margin: 5% 0;
-    border-radius: 5%;
+    margin: 5% 0 15%;
+    border-radius: 2%;
     width: 100%;
     min-height: 400px;
     height: 600px;
@@ -124,6 +169,6 @@ footer {
     grid-area: footer;
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #121212;
     color: #ffffff;
 }
