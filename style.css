@@ -77,6 +77,11 @@ main {
     margin: 0 10%;
 }
 
+main p {
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
 .content-text {
     text-align: center;
 }
