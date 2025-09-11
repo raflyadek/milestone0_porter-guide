@@ -61,38 +61,30 @@ main p {
     text-align: start;
 }
 
-.introduction {
-    max-width: 2000px;
-}
-.introduction img {
-    
-    width: 100%;
-    /* benerin height nya */
-    /* height: auto; */ 
-    border-radius: 2%;
 
-}
 
-.visi-misi-container {
+.container-image-services {
     display: flex;
     margin-top: 5%;
-    max-width: 100%;
     justify-content: space-between;
     /* margin: 0 10%; */
-
 }
 
-.visi-misi{
+.container-image-services img {
     flex: 1;
-}
-
-.visi-misi img {
     border-radius: 2%;
     width: 100%;
     min-width: 200px;
     height: 600px;
     min-height: 200px;
-    /* margin: 10px; */
+    margin: 10px;
+}
+
+/* form-user */
+.form-user {
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* footer */
