@@ -11,6 +11,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
     try {
         // send data to backend (server) via POST request
+        //because POST sends data in the body of the HTTP request not in the url like GET
         const response = await fetch("http://localhost:3000/login", {
             method: "POST",
             headers: { "Content-Type": "application/json"},
