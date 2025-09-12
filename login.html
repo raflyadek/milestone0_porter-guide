@@ -12,9 +12,9 @@
             <section class="login-content">
                 <div class="login-page-text">
                     <h1>Login</h1>
-                    <p>Dont have account? <span> <a href="">Create an account</a></span></p>
+                    <p>Dont have account? <span> <a href="./register.html">Create an account</a></span></p>
                 </div>
-                <form action="POST">
+                <form id="login-form">
                     <label for="username">Username or Email</label>
                     <br>
                     <input type="text" name="username" id="username">
@@ -23,10 +23,10 @@
                     <br>
                     <input type="password" name="password" id="password">
                     <br><br>
-                    <button class="login-button">Log in</button>
+                    <button class="login-button" type="submit">Log in</button>
                 </form>
             </section>
-        
         </main>
+        <script src="./login.js"></script>
     </body>
 </html>
