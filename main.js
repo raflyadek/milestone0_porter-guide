@@ -8,6 +8,12 @@ function carousel() {
     let x = document.getElementsByClassName("carousel-slide");
     let dots = document.getElementsByClassName("dot");
 
+      // If there are no slides, stop here (avoid JS error)
+    if (x.length === 0) {
+        console.warn("⚠️ No carousel slides found, skipping carousel()");
+        return;
+    }
+
     //loop through the carousel-slide length 
     for (let i = 0; i < x.length; i++) {
         // for each element in carousel-slide we set the display none
