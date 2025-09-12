@@ -2,10 +2,6 @@
 document.getElementById('login-form').addEventListener('submit', async (e) => {
     e.preventDefault(); // Prevent default form submission
 
-    // In a real application, you would send the username and password
-    // to a server for authentication. For this example, we'll simulate
-    // a successful login.
-
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
     console.log("username:", username, "password:", password);
