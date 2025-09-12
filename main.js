@@ -1,3 +1,5 @@
+//additional features on js/ we create carousel function for image on  portfolio
+
 //set variable to store carouselIndex to keep track the index outside function
 var carouselIndex = 0;
 //starts the function when web page loads
