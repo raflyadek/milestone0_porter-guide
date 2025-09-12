@@ -12,6 +12,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     // Simulate login register
     if (username === "rafly" && password === "rafly") {
+        alert("Login success, Happy Adventure!")
         window.location.href = "./index.html"; // Redirect to your main page
     } else {
         alert("Invalid credentials. Please try again.");
