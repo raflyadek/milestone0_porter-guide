@@ -21,13 +21,10 @@ if (registerForm) {
             return;
         }
 
-        // ✅ Simulate saving to DB here
-        // In real app: send fetch/axios POST request to backend to save user
-
         console.log("✅ Registration successful!");
         window.location.href = "./login.html"; // Redirect to login page
     });
 
 } else {
-    console.warn("⚠️ #register-form not found, skipping register logic.");
+    console.warn("#register-form not found, skipping register logic.");
 }
